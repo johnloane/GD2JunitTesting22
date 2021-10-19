@@ -36,7 +36,15 @@ public class BankAccount
      */
     public double withdraw(double amount, boolean branch)
     {
-        return -1;
+        if(amount <= balance)
+        {
+            balance -= amount;
+        }
+        if((amount > 500) && !branch)
+        {
+            throw new IllegalArgumentException();
+        }
+        return balance;
     }
 
     public double getBalance()

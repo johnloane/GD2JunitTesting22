@@ -64,6 +64,12 @@ public class BankAccountTest
         double balance = account.withdraw(3003, false);
     }
 
+    @Test
+    public void isCheckingFalse()
+    {
+        assertFalse("The account is not a checking account", account.getAccountType());
+    }
+
 
 
 
