@@ -11,5 +11,10 @@ public class App
         BankAccount account = new BankAccount("Milana", "Vilenskaya", "BOI1234567", 3000, BankAccount.SAVING);
         double balance = account.deposit(1000, true);
         System.out.println(balance);
+
+        Utilities util = new Utilities();
+        System.out.println(util.removePairs(null));
+        String test = "hello";
+        System.out.println(test.getClass());
     }
 }
