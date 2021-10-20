@@ -16,5 +16,7 @@ public class App
         System.out.println(util.removePairs(null));
         String test = "hello";
         System.out.println(test.getClass());
+
+        util.converter(10, 0);
     }
 }
